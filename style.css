@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+/* Primary Colours */
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+/* Neutral Colour */
+--Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background: hsla(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 50vw top 50vh, right 50vw bottom 50vh;
+}
+
+
+.card  {
+    width: 350px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.top {
+    width: 100%;
+    height: 150px;
+    background: url(images/bg-pattern-card.svg);
+}
+
+.profile {
+    background: #fff;
+    position: relative;
+    height: 175px;
+    border-bottom: .5px solid hsla(0, 0%, 79%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.profile img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transform: translateY(-85px);
+    outline: 5px solid white;
+}
+
+.profile h3 {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.profile span {
+    padding: 10px;
+    font-weight: 300;
+    margin-left: 10px;
+    color: var(--Dark-grayish-blue);
+}
+
+.profile small {
+    color: var(--Very-dark-desaturated-blue);
+    margin-top: 15px;
+}
+
+.attribution { font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.stats {
+    background: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+.stats ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+     
+.stats ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats ul li:last-child{
+    margin-right: 50px;
+}
+.stats small {
+    font-weight: bold;
+    line-height: 2px;
+    letter-spacing: 2px;
+    color: var(--Dark-gray);
+    margin-top: 15px;
+}
+
+.stats span {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+/* 
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
